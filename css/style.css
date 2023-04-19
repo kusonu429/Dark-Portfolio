@@ -950,7 +950,7 @@ ul {
   border: none;
  }
 
-.right .Contact form .massage {
+.right .Contact form .message {
   width: 100%;
   margin: 25px 0;
 }
@@ -1253,12 +1253,12 @@ ul {
   margin-bottom: 15px;
 }
 
-.right .Contact form .massage {
+.right .Contact form .message {
   width: 100%;
   margin: 0;
 }
 
-.right .Contact form .massage textarea {
+.right .Contact form .message textarea {
  margin-bottom: 10px;
 
 }
