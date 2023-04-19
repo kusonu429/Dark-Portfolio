@@ -955,7 +955,7 @@ ul {
   margin: 25px 0;
 }
 
-.right .Contact form .massage textarea {
+.right .Contact form .message textarea {
   width: 100%;
   background-color: #314355;
   outline: none;
@@ -971,12 +971,12 @@ ul {
  
 }
 
-.right .Contact form .massage textarea::placeholder {
+.right .Contact form .message textarea::placeholder {
   font-size: 0.9rem;
   color: #eeeeee;
 }
 
-.right .Contact form .massage textarea:focus {
+.right .Contact form .message textarea:focus {
   outline: 4px solid #198754;
   border: none;
 }
