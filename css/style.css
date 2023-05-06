@@ -646,19 +646,26 @@ ul {
   width: 100%;
   padding: 50px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 .right .Services .service {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2 , 1fr);
+  gap: 20px;
+  justify-items: start;
+  align-items: start;
 }
 
-.right .Services .service .web {
+.right .Services .web {
   width: 100%;
-  margin-top: 50px;
+  margin:50px 0;
   text-align: center;
 }
 
-.right .Services .service .web .lap-icon {
+.right .Services  .web .lap-icon {
   background-color: #eeeeee;
   color: #00b87b;
   padding: 10px;
@@ -666,7 +673,7 @@ ul {
   transition: all .4s ease;
 }
 
-.right .Services .service .web .lap-icon:hover {
+.right .Services .web .lap-icon:hover {
   background-color: #00b87b;
   color: #eeeeee;
   cursor: pointer;
@@ -677,17 +684,26 @@ ul {
   color: #00b87b;
 }
 
+
 .right .Services .service .ser {
-  width: 32%;
   background-color: #314355;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 25%);
-  margin-top: 25px;
   transition: all .3s ease;
   background-color: #13202d;
   padding: 20px 1%; 
   overflow: hidden;
   z-index: 0;
   border-radius: 5px;
+}
+
+
+.right .Services .service .ser .skill-icon {
+  text-align:center;
+}
+
+.right .Services .service .ser .skill-icon 
+.skill-logo{
+  width: 60px;
 }
 
 .right .Services .service .ser h1 {
@@ -1050,6 +1066,7 @@ ul {
 
   .right .Services .service .ser {
     padding: 15px 2%;
+
 }
 
 
@@ -1138,13 +1155,9 @@ ul {
     padding-bottom: 25px;
   }
 
-  
-  .right .Services .service .ser{
-    width: 48.5%;   
-    margin-top: 20px;
-  
+  .right .Services .service {
+    grid-template-columns: repeat(2, 1fr);
   }
-
   
 
   .right .Services .service .ser p{
@@ -1159,6 +1172,8 @@ ul {
   .right .Portfolio .projects .links {    
     max-width: 130px;     
 }
+
+
  
  
 
@@ -1268,6 +1283,10 @@ ul {
   max-width: 120px;
 }
 
+.right .Services .service {
+  grid-template-columns: repeat(1, 1fr);
+}
+
 }
 
 
@@ -1300,11 +1319,6 @@ ul {
 @media only screen and (max-width:467px) {
   .container .right {
     padding: 0px 20px;
-}
-
-.right .Services .service .ser {
-  width: 100%;
-  padding: 0px;
 }
 
 .projects .web .img-overlay .box h2 {
